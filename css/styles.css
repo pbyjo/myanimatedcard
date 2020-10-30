@@ -1,0 +1,192 @@
+/* COLORS */
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap");
+.gradient, body {
+  background: #f0efeb;
+  background: -moz-linear-gradient(90deg, #f0efeb 0%, #f7fff7 100%);
+  background: -webkit-linear-gradient(90deg, #f0efeb 0%, #f7fff7 100%);
+  background: linear-gradient(90deg, #f0efeb 0%, #f7fff7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0efeb",endColorstr="#f7fff7",GradientType=1); }
+
+.boxshadow, .main__container-card {
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5); }
+
+/* FONTS */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?mvdave");
+  src: url("../fonts/icomoon.eot?mvdave#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?mvdave") format("truetype"), url("../fonts/icomoon.woff?mvdave") format("woff"), url("../fonts/icomoon.svg?mvdave#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-instagram:before {
+  content: "\ea92"; }
+
+.icon-twitter:before {
+  content: "\ea96"; }
+
+.icon-github:before {
+  content: "\eab0"; }
+
+.icon-linkedin:before {
+  content: "\eac9"; }
+
+/* BODY */
+body {
+  /* font-family: 'Heebo', sans-serif; */
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  /* height: calc(100vh - 10px); */
+  height: 100%;
+  overflow-y: hidden;
+  /* overflow-X: hidden; */ }
+
+span {
+  color: #ffc857; }
+
+/* CLASES */
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #ffc857;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-top: 60px; }
+  .profile-picture > img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: relative; }
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1280px;
+  flex: 1;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto; }
+  .main__container-card {
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    min-width: 450px;
+    height: 140px;
+    /* border: black solid 1px; */
+    border-radius: 1rem;
+    margin: 100px auto;
+    padding: 30px 30px;
+    position: relative;
+    background-color: rgba(240, 239, 235, 0.2); }
+  .main__container-card_title {
+    margin: 0;
+    display: inline-block;
+    font-size: 3rem;
+    color: #143642;
+    line-height: 0; }
+  .main__container-card_list {
+    overflow: hidden;
+    display: inline-block;
+    height: 1.1em;
+    margin-bottom: -.3em;
+    line-height: 1em;
+    padding: 0; }
+  .main__container-card_skill {
+    list-style: none;
+    margin: 1em 0;
+    color: #ffc857; }
+  .main__container-card_social-media {
+    position: absolute;
+    bottom: 30px;
+    right: 30px; }
+    .main__container-card_social-media > a {
+      text-decoration: none;
+      font-size: 1.4rem;
+      letter-spacing: .2em;
+      color: #143642;
+      position: relative;
+      animation: reveal 1s;
+      animation-fill-mode: forwards; }
+    .main__container-card_social-media > a:nth-child(2) {
+      animation-delay: .2s; }
+    .main__container-card_social-media > a:nth-child(3) {
+      animation-delay: .4s; }
+    .main__container-card_social-media > a:last-child {
+      animation-delay: .6s; }
+
+.main__container-card_skill:first-child {
+  margin-top: 0;
+  animation-name: move_text;
+  animation-duration: 20s;
+  animation-delay: 1.2s;
+  animation-iteration-count: infinite; }
+
+/* ANIMATION */
+/* Animacion del texto */
+@keyframes move_text {
+  0% {
+    margin-top: 0; }
+  3% {
+    margin-top: 0; }
+  10% {
+    margin-top: -2em; }
+  13% {
+    margin-top: -2em; }
+  20% {
+    margin-top: -4em; }
+  23% {
+    margin-top: -4em; }
+  30% {
+    margin-top: -6em; }
+  33% {
+    margin-top: -6em; }
+  40% {
+    margin-top: -8em; }
+  43% {
+    margin-top: -8em; }
+  /* 50%
+  {
+      margin-top: -10em
+  }
+  77%
+  {
+      margin-top: -10em
+  }
+  83%
+  {
+      margin-top: 0;
+  }
+  86%
+  {
+      margin-top: 0;
+  } */ }
+@keyframes reveal {
+  from {
+    opacity: 0;
+    bottom: -20px; }
+  to {
+    opacity: 1;
+    bottom: 0; } }
+
+/*# sourceMappingURL=styles.css.map */
